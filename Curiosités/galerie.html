@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Galerie</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Menu hamburger (tuto:https://www.youtube.com/watch?v=dAIVbLrAb_U&t=475s)-->
+    <label class="hamburger-menu">
+        <input type="checkbox">
+    </label>
+    <aside class="sidebar">
+        <nav>
+            <br>
+            <br>
+            <div><a href="index.html">curiosités</a></div>
+            <br>
+            <div><a href="galerie.html">galerie</a></div>
+            <br>
+            <div><a href="ressources.html">ressources</a></div>
+        </nav>
+    </aside>
+
+    <!--Galerie images objets-->
+    <div class="galerie">
+        <a href="img_curiosités_1.html" class="item"><img src="images/img_curiosités_1.jpg"></a>
+        <a href="img_curiosités_2.html" class="item"><img src="images/img_curiosités_2.jpg"></a>
+        <a href="img_curiosités_3.html" class="item"><img src="images/img_curiosités_3.jpg"></a>
+        <a href="img_curiosités_4.html" class="item"><img src="images/img_curiosités_4.jpg"></a>
+        <a href="img_curiosités_5.html" class="item"><img src="images/img_curiosités_5.jpg"></a>
+        <a href="img_curiosités_6.html" class="item"><img src="images/img_curiosités_6.JPG"></a>
+        <a href="img_curiosités_7.html" class="item"><img src="images/img_curiosités_7.jpg"></a>
+        <a href="img_curiosités_8.html" class="item"><img src="images/img_curiosités_8.jpg"></a>
+        <a href="img_curiosités_9.html" class="item"><img src="images/img_curiosités_9.jpg"></a>
+        <a href="img_curiosités_10.html" class="item"><img src="images/img_curiosités_10.jpg"></a>
+        <a href="img_curiosités_11.html" class="item"><img src="images/img_curiosités_11.jpg"></a>
+        <a href="img_curiosités_12.html" class="item"><img src="images/img_curiosités_12.jpg"></a>
+        <a href="img_curiosités_13.html" class="item"><img src="images/img_curiosités_13.jpg"></a>
+        <a href="img_curiosités_14.html" class="item"><img src="images/img_curiosités_14.jpg"></a>
+        <a href="img_curiosités_15.html" class="item"><img src="images/img_curiosités_15.jpg"></a>
+        <a href="img_curiosités_16.html" class="item"><img src="images/img_curiosités_16.JPG"></a>
+        <a href="img_curiosités_17.html" class="item"><img src="images/img_curiosités_17.jpg"></a>
+        <a href="img_curiosités_18.html" class="item"><img src="images/img_curiosités_18.jpg"></a>
+        <a href="img_curiosités_19.html" class="item"><img src="images/img_curiosités_19.jpg"></a>
+        <a href="img_curiosités_20.html" class="item"><img src="images/img_curiosités_20.jpg"></a>
+    </div>
+
+    <!--Java Script : faire apparaître les images dans un ordre aléatoire (code rédigé par Chat GPT)-->
+    <script>
+  const galerie = document.querySelector('.galerie');
+  const images = Array.from(galerie.children);
+
+  images
+    .sort(() => Math.random() - 0.5)
+    .forEach(img => galerie.appendChild(img));
+</script>
+
+</body>
+</html>
